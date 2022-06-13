@@ -16,4 +16,6 @@ dropdown=Select(driver.find_element(by=By.CSS_SELECTOR,value="select[id='example
 
 dropdown.select_by_visible_text('Female')
 
+dropdown.se
+
 dropdown.select_by_index(0)

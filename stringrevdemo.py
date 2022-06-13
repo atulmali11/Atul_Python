@@ -56,3 +56,16 @@ for s in str6:
         up=up+1
 print(lo)
 print(up)
+
+
+str6="AAAAAAAAAAAvvvvvvvvmmvvv"
+lo1=0
+up1=0
+for s in str6:
+    if(ord(s) >= 97 and ord(s) <= 122):
+        lo1=lo1+1
+    elif(ord(s)>= 65 and ord(s)<= 90):
+        up1=up1+1
+print(lo1)
+print(up1)
+
