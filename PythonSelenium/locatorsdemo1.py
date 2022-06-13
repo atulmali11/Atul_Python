@@ -13,4 +13,12 @@ driver.find_element(by=By.CLASS_NAME, value='input.password').clear()
 
 driver.find_element(by=By.LINK_TEXT,value='Forgot Your Password?').click()
 
-driver.find_element(by=By.XPATH,value="//input[text()='Cancel']").click()
+driver.find_element(by=By.XPATH,value="//input[@value='Cancel']").click()
+
+username=driver.find_element(by=By.XPATH, value="//form/div[1]/label").text
+
+print(username)
+
+password=driver.find_element(by=By.CSS_SELECTOR,value="//form/div[2]/label:nth child(3)").text
+print(password)
+
