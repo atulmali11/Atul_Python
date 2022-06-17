@@ -25,3 +25,5 @@ driver.find_element(by=By.XPATH, value="//input[@type='submit']").click()
 
 str = driver.find_element(by=By.CLASS_NAME,value='alert-success').text
 print(str)
+
+assert "Success" in str

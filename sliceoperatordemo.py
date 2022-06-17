@@ -16,4 +16,6 @@ print(str3)
 result=str1+str2+str3
 print(result)
 
+print(str[0].upper()+str[1:3]+str[-1].upper())
+
 

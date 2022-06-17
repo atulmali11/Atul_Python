@@ -1,8 +1,6 @@
 
 #1
 str="I am Atul Mali"
-
-j=len(str)-1
 rev=" "
 for i in str:
     rev=i+rev
