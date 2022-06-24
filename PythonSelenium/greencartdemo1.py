@@ -38,5 +38,19 @@ for veg in names:
     lst1.append(veg.text)
 print(lst1)
 assert lst==lst1
-
 assert float(discounted_amount)<int(original_amount)
+
+amounts= driver.find_elements(by=By.XPATH, value="//tr/td[5]/p")
+sum=0
+for amount in amounts:
+    sum=sum+int(amount.text)
+print(sum)
+
+totamt= int(driver.find_element(by=By.CSS_SELECTOR,value=".totAmt").text)
+
+print(totamt)
+
+assert sum==totamt
+
+
+#//*[@id="productCartTables"]/tbody/tr[2]/td[4]/p
