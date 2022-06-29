@@ -24,3 +24,12 @@ for checkbox in checkboxes:
             checkbox.click()
 # validate all checkbox are selected or not
             #assert checkbox.is_selected()
+
+
+# Code to validate is_displayed methods
+
+print(driver.find_element(by=By.ID,value="displayed-text").is_displayed())
+driver.find_element(by=By.ID,value="hide-textbox").click()
+print(driver.find_element(by=By.ID,value="displayed-text").is_displayed())
+
+
