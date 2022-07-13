@@ -52,3 +52,6 @@ alertmsg=driver.find_element(by=By.XPATH,value="//div[@class='alert alert-succes
 print(alertmsg)
 assert "Success! Thank you!" in alertmsg
 
+
+driver.close()
+
